@@ -8,3 +8,10 @@
 5. 只可以使用 opencv 及 python 标准库
 6. 使用自己的 GitHub 账号
 7. 允许交流及任何形式的学习
+8. 请大家熟悉markdown语法
+# markdown语法
+```python
+# 例
+import cv2
+videoPath = "./video.mp4"
+```
