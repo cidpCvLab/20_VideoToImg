@@ -4,10 +4,10 @@ import os
 def video2imgs(videoPath, id):
     video = cv2.VideoCapture(videoPath)
     ret = True
+    savePath = f"./{videoPath.split('/')[-1]}2imgs"
     while ret:
         ret, frame = video.read()
         imgId = video.get(1)
-        savePath = f"./{videoPath.split('/')[-1]}2imgs"
         if frame is not None:
             frame = cv2.resize(frame, (400, 400))
             if os.path.exists(savePath):
